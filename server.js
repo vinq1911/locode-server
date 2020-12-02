@@ -56,6 +56,14 @@ tingo.dbInit(db, async (collection) => {
         });
     });
 
+    app.get('/list/:place', function (req, res) {
+        collection.find({countryid: req.params.place.toUpperCase()}).toArray(function(err, locodeResult) {
+            res.send(
+                JSON.stringify(locodeResult)
+            );
+        });
+    });
+
     app.get('/list', function (req, res) {
         collection.find().toArray(function(err, locodeResult) {
             const loCodes = locodeResult.map(d => {

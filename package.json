@@ -1,0 +1,26 @@
+{
+  "name": "locode-server",
+  "version": "0.0.1",
+  "description": "Node.JS API Server for LOCODE search",
+  "main": "server.js",
+  "scripts": {
+    "run": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinq1911/locode-server.git"
+  },
+  "author": "Tuomas Soinne / Cupcake Labs Oy Ltd.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinq1911/locode-server/issues"
+  },
+  "homepage": "https://github.com/vinq1911/locode-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.1",
+    "tingodb": "^0.6.1"
+  }
+}
